@@ -132,7 +132,7 @@ const setupLabels = () => {
   document.body.appendChild( labelRenderer.domElement );
 
   const greetDiv = document.createElement('div');
-  greetDiv.className = 'label text-amber-50';
+  greetDiv.className = 'label text-amber-500';
   greetDiv.textContent = "Hi There!";
   greetDiv.style.fontWeight = "100";
   greetDiv.style.fontSize = "3rem";
