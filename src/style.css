@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    /* overflow:  scroll; */
+    /* scroll-snap-type: y mandatory; */
+    scroll-behavior: smooth;
+  }
+  
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+#bg{
+    height: 500px;
+    width: 500px;
+}
+.fade-in {
+    visibility: visible;
+    animation: fadeIn ease 2s;
+    animation-fill-mode: forwards;
+}
+.fade-out {
+    animation: fadeOut ease 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+0% {
+    opacity: 1;
+}
+100% {
+    opacity: 0;
+    pointer-events: none;
+}
+}
+@keyframes fadeIn {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    pointer-events: all;
+    }
+}
+a{
+    color: rgb(255, 221, 0);
+}
+.masked_profile img{
+    height: 15rem;
+    object-fit: cover;
+    mask-image: url('./photos/blob.svg');
+    mask-repeat: no-repeat;
+    mask-size: 10rem;
+    /* mask-position: -0.5rem 0; */
+    transform: translate(2rem);
+}
+.masked_profile svg{
+    height: 0rem;
+}
+

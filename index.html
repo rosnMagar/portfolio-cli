@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://kit.fontawesome.com/6c8f8bdd39.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-black" id="app">
+    <div id="progressDiv" class="absolute justify-center flex bg-stone-900" style="pointer-events: none;">
+      <div class="container mx-5 my-auto w-1/2 flex-col justify-center items-center">
+        <p class="text-center text-7xl text-stone-50" id="progressLabel">Loading...</p>
+        <progress class="w-full mt-5 h-1" id="progressBar" value="0" max="100"></progress>
+      </div>
+   </div>
+    <canvas id="bg" class="mx-auto fixed"></canvas>
+    <!-- <div class="bg-stone-50 absolute w-full" id="description"> -->
+    <div class="absolute intro bg-stone-900 lg:bg-transparent w-full md:w-full sm:w-full lg:w-1/2 lg:right-0" id="description">
+        <div class="h-screen flex justify-center">
+          <div class="my-auto">
+            <div class="lg:flex justify-center">
+              <div class="text-stone-50 text-6xl font-thin text-center">
+                Hi, I am
+              </div>
+              <div class="text-stone-50 text-6xl my-2 lg:my-0 font-thin text-center">
+                <span class="bg-yellow-500 mx-5">Roshan<span>
+              </div>
+            </div>
+           <div class="text-stone-50 text-base text-xl font-thin mx-5 my-10 text-center">
+              I am a CS major and an aspiring software engineer, Truman State University 27'.
+           </div>
+          </div>
+        </div>
+        <div class="h-screen w-full flex justify-center">
+          <div class="my-auto justify-center">
+            <div class="text-stone-50 text-xl text-center mx-5 mt-5">
+              <div class="mx-auto text-stone-50 text-3xl my-10 text-center">
+                <span class="bg-yellow-500 text-3xl mb-3">
+                  Intrests
+                </span>
+              </div>
+              <div class="text-stone-50 mx-auto font-thin text-md lg:text-xl text-center">
+                I am interested in Software Development, Micro Controllers, Web Design,  Game Development, Computer Vision, & building stuff in general  
+              </div>
+              <div class="flex justify-center my-5">
+                <span class="text-yellow-500 mx-5 text-xl lg:text-7xl">
+                  <i class="fa-solid fa-microchip"></i>
+                </span>
+                <span class="text-yellow-500 mx-5 text-xl lg:text-7xl">
+                  <i class="fa-solid fa-globe"></i>
+                </span>
+                <span class="text-yellow-500 mx-5 text-xl lg:text-7xl">
+                  <i class="fa-solid fa-gamepad"></i>
+                </span>
+                <span class="text-yellow-500 mx-5 text-xl lg:text-7xl">
+                  <i class="fa-solid fa-robot"></i>
+                </span>
+             </div>
+            </div>
+          </div>
+      </div>
+      <div class="flex justify-center">
+          <div class="my-auto justify-center">
+            <div class="text-stone-50 text-xl text-center mt-5">
+              <div class="mx-auto text-stone-50 text-3xl text-center mx-40 my-10">
+                <span class="bg-yellow-500 text-3xl">
+                  Projects
+                </span>
+              </div>
+              <div class="text-stone-50 mx-auto text-xl text-center px-10 lg:px-40">
+                <div class="text-sm font-thin mt-4">
+                  <div class="font-thin text-sm" id="stacks_project">
+                    <a href="https://github.com/rosnMagar/stacks_call_number" target="_blank" rel="noopener noreferrer" >
+                      <img src="./photos/stacks.png" class="h-44 w-full object-cover hover:scale-110 transition-all duration-200 cursor-pointer" alt=""/>
+                    </a>
+                  </div>
+                  <div class="p-4">
+                    <h1 class="mb-2 font-thin text-3xl">
+                      Stacks Call Number
+                      <i class="fa-brands fa-python"></i>
+                    </h1>
+                    Small personal project that detects call numbers from library book images and checks their order.
+                  </div>
+               </div>
+              </div>
+              <div class="text-stone-50 text-xl mx-auto text-center px-10 lg:px-40">
+                <div class="gap">.</div>
+                <div class="gap">.</div>
+                <div class="gap mb-5">.</div>
+                <div class="text-sm font-thin mt-4">
+                  <div class="font-thin text-sm" id="this_website">
+                    <img src="./photos/this_website.png" class="h-44 w-full object-cover hover:scale-110 transition-all duration-200 cursor-pointer" alt=""/>
+                  </div>
+                  <div class="p-4">
+                    <h1 class="mb-2 font-thin text-3xl">
+                        This Website <i class="fa-solid fa-cube"></i>
+                    </h1>
+                    This portfolio website is designed & developed entirely by me using three.js & typescript
+                  </div>
+               </div>
+              </div>
+              <div class="text-stone-50 mx-auto text-xl text-center px-10 lg:px-40">
+                <div class="gap">.</div>
+                <div class="gap">.</div>
+                <div class="gap mb-5">.</div>
+                <div class="text-sm font-thin mt-4">
+                  <div class="font-thin text-sm" id="id_card_project">
+                    <video class="h-44 w-full object-cover hover:scale-110 transition-all duration-200 cursor-pointer" poster="./videos/thumbnail/id.png" controls alt="">
+                      <source src="./videos/id.mp4" type="video/mp4"/>
+                    </video>
+                  </div>
+                  <div class="p-4">
+                    <h1 class="mb-2 font-thin text-3xl">
+                      ID Card Generator
+                      <i class="fa-brands fa-python"></i>
+                    </h1>
+                    Developed in python using PIL & OpenCV to detect faces and crop them and create an ID card.
+                  </div>
+               </div>
+              </div>
+              <div class="text-stone-50 mx-auto text-xl text-center px-10 lg:px-40">
+                <div class="gap">.</div>
+                <div class="gap">.</div>
+                <div class="gap mb-5">.</div>
+                <div class="text-sm font-thin mt-4">
+                  <div class="grid grid-cols-3 gap-2 font-thin justify-center  " id="pako_ai">
+                    <div class="">
+                      <video class="h-28 w-auto object-cover hover:scale-110 transition-all duration-200 cursor-pointer" poster="./videos/thumbnail/pako_ai.png" controls alt="">
+                        <source src="./videos/pako_ai.mp4" type="video/mp4"/>
+                      </video>
+                      <span>Crazy Cop AI</span>
+                    </div>
+                    <div class="">
+                      <video class="h-28 w-auto object-cover hover:scale-110 transition-all duration-200 cursor-pointer" poster="./videos/thumbnail/pako_ai.png" controls alt="">
+                        <source src="./videos/selfdriving_ai.mp4" type="video/mp4"/>
+                      </video>
+                      <span>Civilian AI</span>
+                    </div>
+                    <div class="">
+                      <video class="h-28 w-auto object-cover hover:scale-110 transition-all duration-200 cursor-pointer" poster="./videos/thumbnail/pako_ai.png" controls alt="">
+                        <source src="./videos/shaders.mp4" type="video/mp4"/>
+                      </video>
+                      <span>Shaders</span>
+                    </div>
+                  </div>
+                  <div class="p-4">
+                    <h1 class="mb-2 font-thin text-3xl">
+                      Unity Pako Self Driving AI
+                      <i class="fa-brands fa-unity"></i>
+                    </h1>
+                    Back when I was obsessed with playing this PAKO. A prototype for 
+                    PAKO-like game, includes self driving police and civilian cars, 
+                    and my first experience with shaders 😊. 
+                  </div>
+               </div>
+              </div>
+              <div class="text-stone-50 mx-auto text-xl text-center px-10 lg:px-40">
+                <div class="gap">.</div>
+                <div class="gap">.</div>
+                <div class="gap mb-5">.</div>
+                <div class="text-sm font-thin mt-4">
+                  <div class="font-thin text-sm" id="shrinkin_moon">
+                    <!-- <video class="h-44 w-full object-cover hover:scale-110 transition-all duration-200 cursor-pointer" controls alt="">
+                      <source src="/videos/id_video.mp4" type="video/mp4"/>
+                    </video> -->
+                    <video class="h-44 w-full object-cover hover:scale-110 transition-all duration-200 cursor-pointer" poster="./videos/thumbnail/shrinkin_moon.png" controls alt="">
+                      <source src="./videos/shrinkin_moon.mp4" type="video/mp4"/>
+                    </video>
+                  </div>
+                  <div class="p-4">
+                    <h1 class="mb-2 font-thin text-3xl">
+                      Shrinki'n Moon
+                      <i class="fa-brands fa-unity"></i>
+                    </h1>
+                    Inspired by Brakey's Shrinking Planet, I developed my game 
+                    <a href="https://arcadespades.itch.io/shrinkin-moon" target="blank" rel="noopener noreferrer">
+                      Shrinki'n Moon
+                    </a>
+                  </div>
+               </div>
+              </div>
+              <div class="text-stone-50 mx-auto text-xl text-center px-10 lg:px-40">
+                <div class="gap">.</div>
+                <div class="gap">.</div>
+                <div class="gap mb-5">.</div>
+                  <div class="text-sm font-thin mt-4">
+                    <div class="font-thin text-sm" id="blog_discussion_project">
+                      <a href="https://github.com/rosnMagar/stacks_call_number" target="_blank" rel="noopener noreferrer" >
+                        <img src="./photos/blog.gif" class="h-44 w-full object-cover hover:scale-110 transition-all duration-200 cursor-pointer" alt=""/>
+                      </a>
+                    </div>
+                    <div class="p-4">
+                      <h1 class="mb-2 font-thin text-3xl">
+                        Blog & Discussion
+                        <i class="fa-brands fa-react"></i>
+                        <i class="fa-brands fa-python"></i>
+                      </h1>
+                      A full fledged website with backend written in django & frontend in react.
+                    </div>
+                </div>
+                </div>  
+              </div>
+            </div>
+      </div>
+      <div class="h-screen flex justify-center">
+        <div class="my-auto font-thin text-3xl text-center justify-center text-stone-50">
+          Contact Me
+          <div class="flex justify-center text-6xl">
+            <a class="mx-4 my-2" href="https://www.linkedin.com/in/roshanmagar" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a class="mx-4 my-2" href="https://github.com/rosnMagar" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <span class="text-sm">
+            Designed and Developed by Roshan
+          </span>
+          <!-- <div class="masked_profile">
+            <svg id="path_svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+              <clipPath id="clip">
+                  <path fill="#000000" d="M384.5,339Q354,438,255.5,411Q157,384,119.5,312Q82,240,135,194.5Q188,149,269,99.5Q350,50,382.5,145Q415,240,384.5,339Z" />
+              </clipPath>
+           </svg>
+            <img src="./photos/profile.jpg"/>
+          </div> -->
+       </div>
+      </div>
+   </div>
+   <!-- TODO: ADD Driving Website -->
+  <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>

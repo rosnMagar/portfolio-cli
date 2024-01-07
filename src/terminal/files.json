@@ -1,0 +1,157 @@
+{
+    "id_file_map": {
+        "about.doc" : "about",
+        "this_website.html": "this_website"
+    },
+    "about.doc":[
+        "I am a first year computer science student at",
+        "Truman State University",
+        "",
+        "I am currently interested in hardwares and microcontrollers",
+        "especially the ESP32Cam modules, currently planning",
+        "a project involving them.",
+        "",
+        "LinkedIn: linkedin.com/in/roshanmagar",
+        "GitHub: github.com/rosnMagar",
+        ""
+    ],
+    "this_website.html":[
+        "This Website was made by me using",
+        "Typescript & Three.js",
+        "",
+        "Completely wrote the terminal in html canvas from scratch",
+        "Best part? Writing the crt effect shader",
+        "",
+        "PS: It's 3:24 in the morning and I am still tweaking stuff",
+        "will I get the internship?",
+        ""
+    ],
+    "stacks_management.py":[
+        "Stacks Management: ",
+        "",
+        "Small personal project that detects call numbers", 
+        "from library book images and checks their order.",
+        "",
+        "For more Info: github.com/rosnMagar/stacks_call_number",
+        "Or, Scroll Down",
+        ""
+    ],
+    "shrinkinMoon.game":[
+        "Shrinkin Moon:",
+        "",
+        "Mobile game made with unity inspired from", "Brackey's Shrinkin planet",
+        "this was my first published game, had a fun time" ,
+        "implementing the physics and playing with friends", "during testing.",
+        "",
+        "Available at: https://arcadespades.itch.io/shrinkin-moon",
+        ""
+    ],
+    "pako.ai": [
+        "PAKO AI",
+        "",
+        "A fully functioning AI prototype for a PAKO-like game",
+        "made for fun! First time I experimented with shaders",
+        "",
+        "Includes AI for Civilian Cars and Crazy Cop cars",
+        "scroll below ↓ for videos",
+        ""
+    ],
+    "drivingQuiz.app":[
+        "Nepal Driving:",
+        "",
+        "An android application made in Android Studio", 
+        "with all the resources to keep you updated ",
+        "about the rules, regulations, notices, and strategies for", 
+        "getting a drivers license for nepalese students.",
+        ""
+    ],
+    "id_card.py":[
+        "ID Card Generator:",
+        "",
+        "One of my first python projects. An ID card generator",
+        "I made using PIL & OpenCV",
+        "PIL for image manipulation, and OpenCV to detect",
+        "faces to crop them properly for unsuitable images.",
+        "",
+        "TODO: add github link",
+        ""
+    ],
+    "contact.me":[
+        "Email: roshan.thamagar@gmail.com",
+        "Or, connect on LinkedIn",
+        "LinkedIn: linkedin.com/in/roshanmagar",
+        ""
+    ],
+    "help":[
+        "Potato Linux: A dumbed down version of bash developed by me",
+        "",
+        "\"show\"",
+        "USAGE: show <filename>",
+        "",
+        "\"ls\": shows contents of the current directory",
+        "",
+        "\"cd\"",
+        "USAGE: cd <directory> [<..> goes back to root]",
+        ""
+    ],
+    "intro":[
+        "██╗  ██╗███████╗██╗     ██╗      ██████╗ ██╗",
+        "██║  ██║██╔════╝██║     ██║     ██╔═══██╗██║",
+        "███████║█████╗  ██║     ██║     ██║   ██║██║",
+        "██╔══██║██╔══╝  ██║     ██║     ██║   ██║╚═╝",
+        "██║  ██║███████╗███████╗███████╗╚██████╔╝██╗",
+        "╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝ ╚═════╝ ╚═╝",
+        "",
+        "Greetings! ❤",
+        "This is, Roshan",
+        " ■ CS major & Physics minor",
+        " ■ Truman State University",
+        " ■ Class of 2027",
+        "",
+        "Potato Linux Version 1.1 LTS",
+        "Type \"help\" to get started",
+        "Type \"show <filename>\" to see contents",
+        "Scroll Down for more information.",
+        "---------------------------------------------",
+        ""
+    ],
+    "intro_mobile":[
+        "██╗  ██╗███████╗██╗     ██╗      ██████╗ ██╗",
+        "██║  ██║██╔════╝██║     ██║     ██╔═══██╗██║",
+        "███████║█████╗  ██║     ██║     ██║   ██║██║",
+        "██╔══██║██╔══╝  ██║     ██║     ██║   ██║╚═╝",
+        "██║  ██║███████╗███████╗███████╗╚██████╔╝██╗",
+        "╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝ ╚═════╝ ╚═╝",
+        "",
+        "Greetings! ❤",
+        "This is, Roshan",
+        " ■ CS major & Physics minor",
+        " ■ Truman State University",
+        " ■ Class of 2027",
+        "",
+        "Potato Linux Version 1.1 LTS",
+        "Type \"help\" to get started",
+        "Type \"show <filename>\" to see contents",
+        "Scroll Down for more information.",
+        "To use this, please use a desktop/laptop",
+        "---------------------------------------------",
+        ""
+    ],
+    "credits.txt":[
+        "",
+        "\"IBM PCjr 4863 Computer-Freepoly.org\"",
+        "(https://skfb.ly/oLnG9) by Freepoly.org is licensed",
+        "under Creative Commons Attribution",
+        "",
+        "(http://creativecommons.org/licenses/by/4.0/).",
+        "",
+        "\"Desk lamp\"",
+        "(https://skfb.ly/6R9yQ) by KaramellGlass is licensed", 
+        "under Creative Commons Attribution", 
+        "(http://creativecommons.org/licenses/by/4.0/).",
+        "",
+        "Design and Development: Me",
+        ""
+    ]
+} 
+
