@@ -63,7 +63,7 @@ renderer.render(scene, camera);
 
 // adds the computer model
 const computer = model(scene, loadingManager);
-const target = new THREE.Vector3(0.015, 0.41, 0);
+const target = mobileDevice ? new THREE.Vector3(0.015, 0.3, 0): new THREE.Vector3(0.015, 0.41, 0);
 
 // postprocessing setup
 const composer = postProcessing(scene, camera, renderer);
@@ -75,8 +75,8 @@ const setupControls = () => {
   controls.rotateSpeed = 0.05;
   controls.enableDamping = true;
   controls.dampingFactor = 0.1;
-  controls.maxPolarAngle = Math.PI * .5;
-  controls.minPolarAngle = Math.PI * 0.4;
+  controls.maxPolarAngle = Math.PI * 0.5;
+  controls.minPolarAngle = Math.PI * 0.3;
   controls.minAzimuthAngle = Math.PI * -0.17;
   controls.maxAzimuthAngle = Math.PI * 0.25;
   controls.minDistance = 0.8;
@@ -92,7 +92,7 @@ const setupControls = () => {
   tcontrols.minDistance = 0.8;
   tcontrols.maxDistance = 2;
 
-  // in case of mobile device lock vertical orbit
+  // in case of mobile device limit/lock vertical orbit
   if(mobileDevice){
     controls.minPolarAngle = Math.PI * 0.5;
     controls.maxPolarAngle = Math.PI * 0.6;
@@ -125,17 +125,18 @@ const setupLabels = () => {
   // label
   const labelRenderer = new CSS2DRenderer();
   labelRenderer.setSize(window.innerWidth, window.innerHeight);
-  labelRenderer.domElement.className = 'w-full';
+  labelRenderer.domElement.className = 'w-full text-yellow-50';
   labelRenderer.domElement.style.position = 'absolute';
   labelRenderer.domElement.style.top = '0px';
   labelRenderer.domElement.style.pointerEvents = 'none';
   document.body.appendChild( labelRenderer.domElement );
 
   const greetDiv = document.createElement('div');
-  greetDiv.className = 'label text-amber-500';
+  greetDiv.className = 'label text-yellow-50';
   greetDiv.textContent = "Hi There!";
   greetDiv.style.fontWeight = "100";
   greetDiv.style.fontSize = "3rem";
+  greetDiv.style.color = "#ffffef";
   greetDiv.style.backgroundColor = "transparent";
 
   const greetLabel = new CSS2DObject(greetDiv);
@@ -213,19 +214,24 @@ document.addEventListener("wheel", (e) => {
 
 // for mobile devices
 var initialY: number | null = null;
+var initialX: number | null = null;
 
 const startTouch = (e:TouchEvent) => {
   initialY = e.touches[0].clientY;
+  initialX = e.touches[0].clientX;
 }
 
 const moveTouch = (e:TouchEvent) => {
   if(initialY == null) return;
+  if(initialX == null) return;
 
   var currentY = e.touches[0].clientY;
+  var currentX = e.touches[0].clientX;
 
   var diffY = initialY - currentY;
+  var diffX = initialX - currentX;
 
-  if(diffY > 0.0){
+  if(diffY > 50.0 && diffX < 100.0){
     document.dispatchEvent(new WheelEvent('wheel', { deltaY: 1 } ));
   }else if(diffY < 0.0){
     document.dispatchEvent(new WheelEvent('wheel', { deltaY: -1 }));
