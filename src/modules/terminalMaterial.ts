@@ -47,15 +47,6 @@ export const TerminalMaterial = () : THREE.Material => {
     const texture = new THREE.CanvasTexture(canvasTerminal);
     const clock = new THREE.Clock();
 
-    // const material = new THREE.MeshStandardMaterial({
-    //     map: texture, 
-    //     emissiveMap: texture, 
-    //     emissive: 0xffffff, 
-    //     emissiveIntensity: 1, 
-    //     roughness: 0.2, 
-    //     metalness: 0.3,
-    // });
-
     const uniforms = {
         u_resolution: { value: { x: null, y: null } },
         u_time: {value: 0.0},

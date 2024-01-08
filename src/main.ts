@@ -133,7 +133,7 @@ const setupLabels = () => {
 
   const greetDiv = document.createElement('div');
   greetDiv.className = 'label text-yellow-50';
-  greetDiv.textContent = "Hi There!";
+  greetDiv.textContent = "Hi There! Scroll down ↓";
   greetDiv.style.fontWeight = "100";
   greetDiv.style.fontSize = "3rem";
   greetDiv.style.color = "#ffffef";

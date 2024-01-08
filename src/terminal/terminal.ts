@@ -69,7 +69,7 @@ export class Terminal {
         this.prompt = "root@user: "
 
         this.backgroundColor = "#000000";
-        this.fillStyle = "#f7b21e";
+        this.fillStyle = "#e07f19";
 
         this.fontSize = 15;
         this.font = `${this.fontSize}pt consoleFont`;

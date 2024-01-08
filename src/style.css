@@ -47,6 +47,9 @@ html {
 a{
     color: rgb(255, 221, 0);
 }
+a .resume {
+    color: white;
+}
 .masked_profile img{
     height: 15rem;
     object-fit: cover;
