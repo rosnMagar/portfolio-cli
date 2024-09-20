@@ -4,15 +4,39 @@
         "this_website.html": "this_website"
     },
     "about.doc":[
-        "I am a first year computer science student at",
-        "Truman State University",
+        "I am a sophomore computer science student at",
+        "Truman State University. Apart from CS I'am also a Resident Advisor",
+        "for Blanton Nason Brewer Hall at Truman",
         "",
-        "I am currently interested in hardwares and microcontrollers",
-        "especially the ESP32Cam modules, currently planning",
-        "a project involving them.",
+        "I am interested in computer vision and making",
+        "softwares in general, currently making",
+        "a project in .Net MAUI.",
         "",
         "LinkedIn: linkedin.com/in/roshanmagar",
         "GitHub: github.com/rosnMagar",
+        ""
+    ],
+    "summer_24_bell_foundation_research.ai":[
+        "Call Number Detection ",
+        "",
+        "This is my research project that I did over the Summer 2024",
+        "This Project was funded by the Bell Family Foundation Grant.",
+        "Used YOLOv8 and Python to accurately detect library call numbers",
+        "Currently Publishing the research paper for ICCIT conference",
+        "",
+        "This is an extended version of my old project Stacks Management",
+        "but focused heavily on the detection algorithm.",
+        "Implements: Python, YOLOv8, Matplotlib",
+        ""
+    ],
+    "aikinator_tigerhacks.ai":[
+        "Call Number Detection ",
+        "",
+        "Trained a neural network to process user input and predict",
+        "disease symptoms out of that.",
+        "",
+        "Designed like the famous prediction AI game: Akinator",
+        "Implements: Django, REST framework, Tensorflow, Js",
         ""
     ],
     "this_website.html":[
@@ -23,7 +47,8 @@
         "Best part? Writing the crt effect shader",
         "",
         "PS: It's 3:24 in the morning and I am still tweaking stuff",
-        "will I get the internship?",
+        "will I get an internship?",
+        "Implements: Django, REST framework, Tensorflow, Js",
         ""
     ],
     "stacks_management.py":[
@@ -34,6 +59,7 @@
         "",
         "For more Info: github.com/rosnMagar/stacks_call_number",
         "Or, Scroll Down",
+        "Implements: Python, YOLOv8, Matplotlib",
         ""
     ],
     "shrinkinMoon.game":[
@@ -44,36 +70,7 @@
         "implementing the physics and playing with friends", "during testing.",
         "",
         "Available at: https://arcadespades.itch.io/shrinkin-moon",
-        ""
-    ],
-    "pako.ai": [
-        "PAKO AI",
-        "",
-        "A fully functioning AI prototype for a PAKO-like game",
-        "made for fun! First time I experimented with shaders",
-        "",
-        "Includes AI for Civilian Cars and Crazy Cop cars",
-        "scroll below ↓ for videos",
-        ""
-    ],
-    "drivingQuiz.app":[
-        "Nepal Driving:",
-        "",
-        "An android application made in Android Studio", 
-        "with all the resources to keep you updated ",
-        "about the rules, regulations, notices, and strategies for", 
-        "getting a drivers license for nepalese students.",
-        ""
-    ],
-    "id_card.py":[
-        "ID Card Generator:",
-        "",
-        "One of my first python projects. An ID card generator",
-        "I made using PIL & OpenCV",
-        "PIL for image manipulation, and OpenCV to detect",
-        "faces to crop them properly for unsuitable images.",
-        "",
-        "TODO: add github link",
+        "Implements: Unity3d, C#",
         ""
     ],
     "contact.me":[
@@ -104,11 +101,11 @@
         "",
         "Greetings! ❤",
         "This is, Roshan",
-        " ■ CS major & Physics minor",
+        " ■ CS and DataScience major",
         " ■ Truman State University",
-        " ■ Class of 2026",
+        " ■ Class of 2027",
         "",
-        "Potato Linux Version 1.1 LTS",
+        "Potato Linux Version 1.12 LTS",
         "Type \"help\" to get started",
         "Type \"show <filename>\" to see contents",
         "Scroll Down for more information.",
@@ -125,11 +122,11 @@
         "",
         "Greetings! ❤",
         "This is, Roshan",
-        " ■ CS major & Physics minor",
+        " ■ CS major & DataScience Major",
         " ■ Truman State University",
-        " ■ Class of 2026",
+        " ■ Class of 2027",
         "",
-        "Potato Linux Version 1.1 LTS",
+        "Potato Linux Version 1.12 LTS",
         "Type \"help\" to get started",
         "Type \"show <filename>\" to see contents",
         "Scroll Down for more information.",
