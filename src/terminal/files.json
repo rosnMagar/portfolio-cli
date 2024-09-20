@@ -5,7 +5,8 @@
     },
     "about.doc":[
         "I am a sophomore computer science student at",
-        "Truman State University. Apart from CS I'am also a Resident Advisor",
+        "Truman State University. Apart from CS I'am also a",
+        "Resident Advisor",
         "for Blanton Nason Brewer Hall at Truman",
         "",
         "I am interested in computer vision and making",
@@ -16,20 +17,22 @@
         "GitHub: github.com/rosnMagar",
         ""
     ],
-    "summer_24_bell_foundation_research.ai":[
+    "summer_24_research.ai":[
         "Call Number Detection ",
         "",
         "This is my research project that I did over the Summer 2024",
         "This Project was funded by the Bell Family Foundation Grant.",
-        "Used YOLOv8 and Python to accurately detect library call numbers",
-        "Currently Publishing the research paper for ICCIT conference",
+        "Used YOLOv8 and Python to accurately detect library",
+        "call numbers.",
+        "Currently Publishing the research paper for",
+        "ICCIT conference",
         "",
         "This is an extended version of my old project Stacks Management",
         "but focused heavily on the detection algorithm.",
         "Implements: Python, YOLOv8, Matplotlib",
         ""
     ],
-    "aikinator_tigerhacks.ai":[
+    "aikinator_truhacks.ai":[
         "Call Number Detection ",
         "",
         "Trained a neural network to process user input and predict",

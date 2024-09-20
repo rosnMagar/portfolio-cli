@@ -4,12 +4,11 @@ import fileDataJson from './files.json';
 const DIRECTORY_MAP: any = {
     folders: {
         projects: [
+            "summer_24_research.ai",
+            "aikinator_truhacks.ai",
             "this_website.html",
             "stacks_management.py",
-            "id_card.py",
             "shrinkinMoon.game",
-            "drivingQuiz.app",
-            "pako.ai",
         ],
     },
     files: [
