@@ -2,7 +2,7 @@ import { CommandHandler }  from './command';
 import filesDataJson from "./files.json";
 
 // font
-let consoleFont = new FontFace('consoleFont', 'url(/clacon2.ttf)');
+let consoleFont = new FontFace('consoleFont', 'url(./clacon2.ttf)');
 consoleFont.load().then((font) => document.fonts.add(font))
 
 const intro = window.innerWidth > 800 ? filesDataJson.intro: filesDataJson.intro_mobile;
