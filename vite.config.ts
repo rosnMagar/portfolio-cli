@@ -3,7 +3,7 @@ import { build, defineConfig } from 'vite'
 // https://vitejs.dev/config/
 export default defineConfig({
   build:{
-    outDir: "github-host"
+    outDir: "personal"
   },
   server: {
     watch: {
